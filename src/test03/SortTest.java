@@ -14,23 +14,33 @@ public class SortTest {
 		ages[0] = 10;
 		ages[1] = 5;
 		ages[2] = 22;
-		
-		
-//		int tmp = ages[0];
-//		ages[0] = ages[1];
-//		ages[1] = tmp;
-//		
-		int tmp = ages[2]; 
-		ages[2] = ages[1]; 
-		ages[1] = ages[0];
-		ages[0] = tmp;
+	//내림차순
+		int tmp = ages[0];
+		ages[0] = ages[2];
+		//22.5.22
+		ages[2] = tmp;
+		//22.5.10
+		tmp = ages[1];
+		ages[1] = ages[2];
+		ages[2] = tmp;
+		//22.10.5
 		
 		
 		for(int i = 0; i<ages.length; i++) {
 			System.out.println(ages[i]);
 			
 			//ascending 오름차순
+			//
+			//1
+			//10
+			//100
+			
 			//descending 내림차순
+			//
+			//100
+			//10
+			//1
+			
 			
 			
 			
